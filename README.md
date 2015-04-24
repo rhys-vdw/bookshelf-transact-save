@@ -1,6 +1,6 @@
 # [bookshelf-transact-save](https://github.com/rhys-vdw/bookshelf-transact-save)
 
-Plugin for Bookshelf.js that allows forcing a transaction when saving models. Useful for saving additional models in handlers for events `saving`, `saved`, `creating` and `created`.
+Plugin for [Bookshelf.js](http://bookshelfjs.org) that allows forcing a transaction when saving models. Useful for saving additional models in handlers for events `saving`, `saved`, `creating` and `created`.
 
 Set `transactSave` to true on a model, and it will always use a transaction when saving.
 

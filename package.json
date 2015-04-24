@@ -1,5 +1,5 @@
 {
-  "name": "transact-save",
+  "name": "bookshelf-transact-save",
   "version": "0.1.0",
   "description": "Plugin for Bookshelf.js that allows forcing a transaction when saving models. Useful for saving additional models in handlers for events `saving`, `saved`, `creating` and `created`.",
   "main": "index.js",

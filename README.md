@@ -9,12 +9,13 @@ bookshelf.plugin(require('bookshelf-transact-save'));
 
 var Person = bookshelf.Model.extend({
   tableName: 'my_model',
-  limbs: function () { return this.hasMany('Limb'); },
   transactSave: true,
-  constructor: function () {
-    bookshelf.Model.apply(this, arguments)
+  
+  initialize: function () {
     this.on('created', this.addLimbs);
   },
+  
+  limbs: function () { return this.hasMany('Limb'); },
 
   addLimbs: function (model, resp, options) {
     // Options will always have a `transacting` property, even if save is not

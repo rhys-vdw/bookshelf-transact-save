@@ -9,7 +9,7 @@ bookshelf.plugin(require('bookshelf-transact-save'));
 
 var Person = bookshelf.Model.extend({
   tableName: 'my_model',
-  limbs: function () { this.hasMany('Limb'); }
+  limbs: function () { return this.hasMany('Limb'); },
   transactSave: true,
   constructor: function () {
     bookshelf.Model.apply(this, arguments)

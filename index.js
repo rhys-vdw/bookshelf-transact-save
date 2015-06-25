@@ -2,7 +2,7 @@ module.exports = function (bookshelf) {
   var proto = bookshelf.Model.prototype;
 
   var Model = bookshelf.Model.extend({
-    trasactSave: false,
+    transactSave: false,
     save: function (attrs, options) {
       var self = this;
       if (!options) options = {};
